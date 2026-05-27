@@ -17,4 +17,4 @@ Frontend:
 cd Frontend
 npm run dev
 ```
-"# 2v2-Chess" 
+# Once done you can open frontentend localhost server and use the system
