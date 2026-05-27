@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body,
+	#root {
+		min-height: 100%;
+	}
+
+	body {
+		margin: 0;
+		font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+		background-color: #020617;
+	}
+
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus {
+		-webkit-box-shadow: 0 0 0 1000px #1e293b inset;
+		-webkit-text-fill-color: #e2e8f0;
+		caret-color: #e2e8f0;
+	}
+}

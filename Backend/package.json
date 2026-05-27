@@ -1,0 +1,47 @@
+{
+  "name": "2v2_sachmatai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/Server.js",
+    "dev": "nodemon src/Server.js",
+    "db:migrate:game-name": "node scripts/migrateGameNameColumn.mjs",
+    "db:migrate:game-settings": "node scripts/migrateGameSettingsColumns.mjs",
+    "db:migrate:offers": "node scripts/migrateOfferColumns.mjs",
+    "db:migrate:player-reserves": "node scripts/migratePlayerReserves.mjs",
+    "db:migrate:existing-game-board-colors": "node scripts/migrateExistingGameBoardColors.mjs",
+    "db:migrate:drop-login-security-columns": "node scripts/migrateDropLoginSecurityColumns.mjs",
+    "db:migrate:inbox-items": "node scripts/migrateInboxItemsTable.mjs",
+    "db:migrate:inbox-sender-column": "node scripts/migrateInboxItemsSenderUserColumn.mjs",
+    "db:migrate:game-status-default": "node scripts/migrateGameStatusDefault.mjs",
+    "db:migrate:game-clock-columns": "node scripts/migrateGameClockColumns.mjs",
+    "db:migrate:chat-type": "node scripts/migrateChatTypeColumn.mjs",
+    "db:migrate:chat-sender": "node scripts/migrateGameChatSenderColumns.mjs"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@upstash/redis": "^1.35.6",
+    "2v2_sachmatai-workspace": "file:..",
+    "argon2": "^0.44.0",
+    "chess.js": "^1.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.0",
+    "google-auth-library": "^10.6.2",
+    "jsonwebtoken": "^9.0.3",
+    "mailersend": "^2.6.0",
+    "nodemailer": "^8.0.1",
+    "pg": "^8.11.3",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@express-rate-limit/tsconfig": "^1.0.2",
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.11"
+  }
+}

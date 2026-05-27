@@ -1,0 +1,51 @@
+.env
+.env.*
+!.env.example
+
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Local env / cache
+*.local
+.cache/
+.vite/
+
+# Runtime
+*.pid
+*.seed
+*.pid.lock
+pids/
+
+
+.claude/
+.live-processes.json
+.agents/
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
